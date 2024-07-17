@@ -23,12 +23,9 @@ for k = 1 : n-1 % passo del metodo
         aux = p(k);
         p(k) = p(ind);
         p(ind) = aux;
-        % p([k ind]) = p([ind k]);
-        % Scambio delle righe
         temp = A(k,:);
         A(k,:) = A(ind,:);
         A(ind,:) = temp;
-        % A([k ind],:) = A([ind k],:);
     end
 
     % Metodo di eliminazione Gaussiana

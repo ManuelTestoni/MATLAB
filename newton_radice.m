@@ -23,8 +23,9 @@ for k = 1 : Nmax
     x = xnew;
 end
 
-if k == Nmax
-    fprintf('Criterio di arresto non raggiunto')
+    if k == Nmax
+        fprintf('Criterio di arresto non raggiunto')
+    end 
 end
 
 
